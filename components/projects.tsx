@@ -8,6 +8,16 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 const projects = [
+
+   {
+  title: "Legal Assistant",
+  description:
+    "An AI-powered platform that generates and edits legal documents like Word and PDF files. Developed under CoderBrill, I contributed to this project by enhancing user interaction and refining document workflow experiences.",
+  tags: ["AI", "LegalTech", "Next.js", "UI/UX", "PDF/Word"],
+  image: "/images/projects3.webp",
+  liveLink: "https://app.dev.legalassistant.au/",
+}
+,
   {
     title: "PodBCN",
     description:
@@ -24,14 +34,7 @@ const projects = [
     image: "/images/projects2.webp",
     liveLink: "https://www.rains.com/",
   },
-  {
-    title: "Mr. Book Peshawar",
-    description:
-      "An e-commerce platform for ordering a variety of books. Designed to provide a seamless shopping experience, worked on the frontend to enhance navigation and ensure a smooth user interface.",
-    tags: ["E-commerce", "Frontend", "React", "UI/UX"],
-    image: "/images/projects3.webp",
-    liveLink: "https://mrbookpeshawar.com/",
-  },
+ 
   {
     title: "Heritage Walk Footwear",
     description:

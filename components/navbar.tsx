@@ -134,7 +134,7 @@ export default function Navbar() {
                 asChild
                 className="bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-lg"
               >
-                <a href="/AbuzarCv (2).pdf" download="Abuzar_Khan_Resume.pdf">
+                <a href="/Abuzar WebCV.pdf" download="Abuzar_Khan_Resume.pdf">
                   <Download className="mr-2 h-4 w-4" /> Resume
                 </a>
               </Button>
