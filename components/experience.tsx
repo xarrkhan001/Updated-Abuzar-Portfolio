@@ -7,25 +7,29 @@ import { CheckCircle, Briefcase } from "lucide-react"
 
 const experiences = [
   {
-    title: "Software Engineer (Frontend Developer)",
-    company: "Tech Emulsion",
-    period: "2024 - 2025",
-    location: "Peshawar (Onsite)",
+    title: "Founder & Full Stack Engineer",
+    company: "ASH Cloud",
+    period: "2024 - Present",
+    location: "Virtual Company",
     responsibilities: [
-      "Working as a Frontend Developer, building components for various web applications.",
-      "Implementing user interfaces using React, Next.js, and Vue.js.",
-      "Collaborating with the team to deliver high-quality web solutions.",
+      "Founded and leading ASH Cloud, a virtual company specializing in web development, mobile app development, and AI solutions.",
+      "Managing a talented team and leading technical direction for innovative projects across multiple platforms.",
+      "Developing full-stack applications using React, Next.js, Vue.js, and modern web technologies.",
+      "Implementing AI solutions and building cross-platform mobile applications.",
+      "Overseeing project architecture, deployment, and client relationship management.",
     ],
   },
   {
-    title: "Frontend Developer",
-    company: "Tech Pioneer",
+    title: "Full Stack Developer",
+    company: "Various Companies",
     period: "2023 - 2024",
-    location: "Peshawar",
+    location: "Multiple Locations",
     responsibilities: [
-      "8 months work experience as Front-End Developer.",
-      "Collaborated on several projects, contributing to their design, development, and implementation.",
-      "Built responsive and interactive user interfaces using modern web technologies.",
+      "Worked with multiple companies as a full stack developer, gaining diverse experience across different industries.",
+      "Developed responsive web applications and user interfaces using modern frameworks.",
+      "Collaborated on various projects ranging from e-commerce platforms to AI-powered applications.",
+      "Built and maintained backend systems, databases, and API integrations.",
+      "Contributed to software quality assurance and project delivery across different teams.",
     ],
   },
 ]

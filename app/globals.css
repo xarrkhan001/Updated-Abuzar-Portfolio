@@ -98,6 +98,23 @@
   animation: pulse-glow 2s ease-in-out infinite;
 }
 
+/* Gradient border animation */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-shift {
+  animation: gradient-shift 3s ease-in-out infinite;
+}
+
 /* Gradient text */
 .gradient-text {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600;

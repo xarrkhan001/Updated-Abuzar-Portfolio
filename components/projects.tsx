@@ -9,13 +9,22 @@ import Image from "next/image"
 
 const projects = [
 
-   {
+  {
+    title: "Sehat Kor",
+    description:
+      "Sehat Kor is a not-for-profit digital platform by Sehat Kor Foundation, built to connect healthcare providers with patients in a transparent, accessible, and meaningful way. Our mission is to make healthcare easier to reach, understand, and trust.",
+    tags: ["Healthcare", "Non-Profit", "React", "Full Stack", "Next.js"],
+    image: "/images/projects.jpg",
+    liveLink: "https://sehatkor.pk/",
+  },
+
+  {
   title: "Legal Assistant",
   description:
     "An AI-powered platform that generates and edits legal documents like Word and PDF files. Developed under CoderBrill, I contributed to this project by enhancing user interaction and refining document workflow experiences.",
   tags: ["AI", "LegalTech", "Next.js", "UI/UX", "PDF/Word"],
   image: "/images/projects3.webp",
-  liveLink: "https://app.dev.legalassistant.au/",
+  liveLink: "https://app.legalassistant.au/",
 }
 ,
   {
@@ -36,20 +45,20 @@ const projects = [
   },
  
   {
-    title: "Heritage Walk Footwear",
+    title: "Hospital Management System",
     description:
-      "An e-commerce platform for 'Heritage Walk Footwear' specializing in Peshawari and Charsadda chapplas. Built with Next.js, using Stripe, Firebase, and Sanity for payments, authentication, and product management.",
-    tags: ["E-commerce", "Full Stack", "Next.js", "Firebase", "Stripe"],
+      "A comprehensive hospital management system with patient registration, appointment scheduling, medical records, staff management, billing, and real-time dashboard analytics.",
+    tags: ["Healthcare", "Management System", "React", "Full Stack", "Next.js"],
     image: "/images/projects5.webp",
-    liveLink: "https://heritage-walk-footer-nextjs-project-eccomerce.vercel.app/",
+    liveLink: "https://hospital-management-wheat-iota.vercel.app/",
   },
   {
-    title: "AI Image Generation",
+    title: "Dukaan E-commerce",
     description:
-      "An AI-powered image generation application that allows users to create unique images based on text prompts. Built with modern web technologies and integrated with AI APIs.",
-    tags: ["AI", "React", "API Integration", "Frontend"],
+      "A modern e-commerce platform built with Next.js featuring product catalog, shopping cart, user authentication, payment integration, order management, and comprehensive admin dashboard for online store operations.",
+    tags: ["E-commerce", "Next.js", "Full Stack", "Payment Integration", "Admin Dashboard"],
     image: "/images/projects5.jpg",
-    liveLink: "https://abuzar-ai-image-generation.vercel.app/",
+    liveLink: "https://dukaan-henna.vercel.app/",
   },
   {
     title: "Voice Chat App",
@@ -58,14 +67,6 @@ const projects = [
     tags: ["Real-time", "React", "Firebase", "Voice API"],
     image: "/images/projects6.webp",
     liveLink: "https://voice-chat-chatapp.vercel.app/",
-  },
-  {
-    title: "Portfolio with Radix UI",
-    description:
-      "A modern portfolio website built with Next.js and Radix UI, showcasing projects and skills in an elegant and responsive design.",
-    tags: ["Portfolio", "Next.js", "Radix UI", "Frontend"],
-    image: "/images/projects.jpg",
-    liveLink: "https://abu-zar-latest-portfolio-radixui.vercel.app/",
   },
 ]
 

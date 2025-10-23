@@ -53,15 +53,10 @@ export default function About() {
             <Card className="border-primary/10 hover:border-primary/30 transition-colors duration-300 shadow-lg">
               <CardContent className="p-6 space-y-4">
                 <p className="text-lg leading-relaxed">
-                  A Web Developer with two years of hands-on experience in designing, developing, and deploying web
-                  applications using various technologies and programming languages. Currently doing onsite job as a
-                  Software Engineer at Tech Emulsion, specializing in frontend development with React, Next.js, and
-                  Vue.js.
+                  A Full Stack Engineer with two years of hands-on experience working with multiple companies in web and mobile app development. I've designed, developed, and deployed various applications using modern technologies and programming languages, specializing in creating intuitive and responsive user interfaces.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  My passion lies in creating intuitive and responsive user interfaces that provide exceptional user
-                  experiences. I'm constantly learning and adapting to new technologies to stay at the forefront of web
-                  development.
+                  Currently running my own virtual company called ASH Cloud with a talented team, specializing in web development, mobile app development, and AI solutions. I lead the technical direction and development of innovative projects across multiple platforms. My passion lies in creating exceptional user experiences and staying at the forefront of web development technologies.
                 </p>
                 <div className="flex flex-wrap gap-2 pt-2">
                   <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">React.js</span>

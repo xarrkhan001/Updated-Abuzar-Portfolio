@@ -8,20 +8,20 @@ import Image from "next/image"
 
 export default function Hero() {
   return (
-    <section id="home" className="py-12 md:py-16">
+    <section id="home" className="py-6 md:py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex flex-col space-y-6"
+            className="flex flex-wrap gap-3 pt-1"
           >
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="space-y-2"
+              className="space-y-1"
             >
               <motion.span
                 initial={{ opacity: 0, x: -20 }}
@@ -45,7 +45,7 @@ export default function Hero() {
                 transition={{ delay: 0.5, duration: 0.5 }}
                 className="text-2xl md:text-3xl text-muted-foreground"
               >
-                Full Stack Developer | SQA
+                Full Stack Engineer | SQA + DevOps
               </motion.h2>
             </motion.div>
 
@@ -55,7 +55,7 @@ export default function Hero() {
               transition={{ delay: 0.6, duration: 0.5 }}
               className="text-lg text-muted-foreground max-w-md"
             >
-              A Full Stack Developer with two years of experience in web development and software quality assurance. Skilled in building scalable applications, writing clean code, and ensuring high product quality through automated and manual testing.
+              Full Stack Engineer with 2+ years of experience in web/mobile development, SQA, and DevOps. Expert in responsive web apps, cross-platform mobile apps, clean code, automated testing, and CI/CD pipelines.
             </motion.p>
 
             <motion.div
@@ -79,18 +79,8 @@ export default function Hero() {
                 size="lg"
                 className="group border-primary/20 hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-md"
               >
-                <a href="/Abuzar WebCV.pdf" download="Abuzar_Khan_Resume.pdf">
+                <a href="/Abu zar resume s.e.pdf" download="Abuzar_Khan_Resume.pdf">
                   <Download className="mr-2 h-4 w-4 group-hover:translate-y-1 transition-transform" /> Download CV
-                </a>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="group border-primary/20 hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-md"
-              >
-                <a href="https://abu-zar-latest-portfolio-radixui.vercel.app/" target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="mr-2 h-4 w-4" /> Portfolio
                 </a>
               </Button>
             </motion.div>
@@ -99,7 +89,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.5 }}
-              className="flex flex-wrap gap-4 pt-2"
+              className="flex flex-wrap gap-3 pt-1"
             >
               <div className="flex items-center text-muted-foreground bg-muted/50 px-3 py-1.5 rounded-full shadow-sm">
                 <MapPin className="h-4 w-4 mr-2 text-primary" />
@@ -125,7 +115,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9, duration: 0.5 }}
-              className="flex gap-4 pt-2"
+              className="flex gap-3 pt-1"
             >
               <motion.a
                 whileHover={{ scale: 1.1, rotate: 5 }}
@@ -167,34 +157,36 @@ export default function Hero() {
             className="flex justify-center"
           >
             <div className="relative">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="absolute -inset-0.5 bg-gradient-to-r from-primary to-purple-600 rounded-full blur opacity-70"
-                style={{ zIndex: -1 }}
-              ></motion.div>
+              {/* Solid Gradient Border using box-shadow */}
               <motion.div
                 initial={{ y: 0 }}
                 animate={{ y: [0, -10, 0] }}
                 transition={{ repeat: Number.POSITIVE_INFINITY, duration: 3, ease: "easeInOut" }}
-                className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-background shadow-xl"
-                style={{ marginTop: "20px" }}
+                className="relative w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden shadow-2xl p-1"
+                style={{
+                  marginTop: "8px",
+                  backgroundImage: 'linear-gradient(45deg, #5b21b6, #9d174d, #7f1d1d, #5b21b6)',
+                  backgroundSize: '300% 300%',
+                  animation: 'gradient-shift 3s ease-in-out infinite',
+                  boxShadow: '0 0 20px rgba(91, 33, 182, 0.4), inset 0 0 20px rgba(91, 33, 182, 0.1)'
+                }}
               >
-                <Image
-                  src="/images/profile.png"
-                  alt="Abuzar Khan"
-                  fill
-                  className="object-cover object-center"
-                  priority
-                />
+                <div className="w-full h-full rounded-full overflow-hidden bg-background">
+                  <Image
+                    src="/abai.png"
+                    alt="Abuzar Khan"
+                    fill
+                    className="object-cover object-center scale-110"
+                    priority
+                  />
+                </div>
               </motion.div>
 
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
-                className="absolute -bottom-5 -right-5 bg-background rounded-full p-2 shadow-lg"
+                className="absolute -bottom-6 -right-6 bg-background rounded-full p-2 shadow-lg"
               >
                 <div className="bg-gradient-to-r from-primary to-purple-600 rounded-full p-3 shadow-md">
                   <code className="text-white font-bold text-sm">{"<coder/>"}</code>
@@ -205,29 +197,27 @@ export default function Hero() {
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.5 }}
-                className="absolute -top-2 -left-2 bg-background rounded-full p-1.5 shadow-lg"
+                className="absolute -top-4 -left-4 bg-background rounded-full p-1.5 shadow-lg"
               >
                 <div className="bg-gradient-to-r from-purple-600 to-primary rounded-full p-2 shadow-md">
                   <span className="text-white font-bold text-xs">React</span>
                 </div>
               </motion.div>
-
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 1.2, duration: 0.5 }}
-                className="absolute top-1/4 -left-8 bg-background rounded-full p-1.5 shadow-lg"
+                className="absolute top-1/4 -left-10 bg-background rounded-full p-1.5 shadow-lg"
               >
                 <div className="bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full p-2 shadow-md">
                   <span className="text-white font-bold text-xs">Next.js</span>
                 </div>
               </motion.div>
-
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 1.4, duration: 0.5 }}
-                className="absolute bottom-1/4 -left-6 bg-background rounded-full p-1.5 shadow-lg"
+                className="absolute bottom-1/4 -left-8 bg-background rounded-full p-1.5 shadow-lg"
               >
                 <div className="bg-gradient-to-r from-green-500 to-emerald-400 rounded-full p-2 shadow-md">
                   <span className="text-white font-bold text-xs">Vue.js</span>
@@ -237,22 +227,33 @@ export default function Hero() {
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 1.6, duration: 0.5 }}
-                className="absolute -top-4 right-1/4 bg-background rounded-full p-1.5 shadow-lg"
+                transition={{ delay: 1.8, duration: 0.5 }}
+                className="absolute top-1/4 -right-10 bg-background rounded-full p-1.5 shadow-lg"
               >
-                <div className="bg-gradient-to-r from-red-500 to-orange-400 rounded-full p-2 shadow-md">
-                  <span className="text-white font-bold text-xs">Redux</span>
+                <div className="bg-gradient-to-r from-green-600 to-green-400 rounded-full p-2 shadow-md">
+                  <span className="text-white font-bold text-xs">Node.js</span>
                 </div>
               </motion.div>
 
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 1.8, duration: 0.5 }}
-                className="absolute top(template_type: code, template_language: JSX)1/3 -right-6 bg-background rounded-full p-1.5 shadow-lg"
+                transition={{ delay: 2, duration: 0.5 }}
+                className="absolute -top-7 right-1/4 bg-background rounded-full p-1.5 shadow-lg"
               >
-                <div className="bg-gradient-to-r from-green-600 to-green-400 rounded-full p-2 shadow-md">
-                  <span className="text-white font-bold text-xs">Node.js</span>
+                <div className="bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full p-2 shadow-md">
+                  <span className="text-white font-bold text-xs">React Native</span>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: 2.2, duration: 0.5 }}
+                className="absolute bottom-1/4 -right-6 bg-background rounded-full p-1.5 shadow-lg"
+              >
+                <div className="bg-gradient-to-r from-green-700 to-green-500 rounded-full p-2 shadow-md">
+                  <span className="text-white font-bold text-xs">Django</span>
                 </div>
               </motion.div>
             </div>
@@ -263,7 +264,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.5 }}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 hidden md:block"
+          className="absolute bottom-6 left-1/2 transform -translate-x-1/2 hidden md:block"
         >
           <motion.div
             animate={{ y: [0, 10, 0] }}

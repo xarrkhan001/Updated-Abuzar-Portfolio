@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Abuzar Khan | Software Engineer",
   description:
     "Portfolio website of Abuzar Khan, a Software Engineer specializing in frontend development with React, Next.js, and Vue.js.",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
