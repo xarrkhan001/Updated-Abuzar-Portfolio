@@ -29,7 +29,7 @@ const experiences = [
       "Developed responsive web applications and user interfaces using modern frameworks.",
       "Collaborated on various projects ranging from e-commerce platforms to AI-powered applications.",
       "Built and maintained backend systems, databases, and API integrations.",
-      "Contributed to software quality assurance and project delivery across different teams.",
+      "Contributed to project delivery and system optimization across different teams.",
     ],
   },
 ]
