@@ -71,7 +71,7 @@ export default function Hero() {
               <Button
                 asChild
                 size="lg"
-                className="group bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                className="group bg-gradient-to-r from-primary to-indigo-600 hover:from-primary/90 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 <Link href="#contact">
                   Contact Me <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -83,7 +83,7 @@ export default function Hero() {
                 size="lg"
                 className="group border-primary/20 hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-md"
               >
-                <a href="/Abu zar resume s.e.pdf" download="Abuzar_Khan_Resume.pdf">
+                <a href="/ab-cv01.pdf" download="Abuzar_Khan_CV.pdf">
                   <Download className="mr-2 h-4 w-4 group-hover:translate-y-1 transition-transform" /> Download CV
                 </a>
               </Button>

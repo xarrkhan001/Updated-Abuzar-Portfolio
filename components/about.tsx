@@ -50,9 +50,9 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="relative h-[400px] md:h-auto w-full md:w-[320px] shrink-0 group mx-auto md:mx-0"
+            className="hidden md:relative h-auto w-full md:w-[320px] shrink-0 group md:flex flex-col"
           >
-            <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-purple-600/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-sky-400/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <Card className="h-full w-full overflow-hidden border-primary/20 glass-card relative z-10">
               <Image
                 src="/abai.png"
@@ -63,7 +63,7 @@ export default function About() {
             </Card>
             {/* Decorative Elements */}
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-full blur-2xl -z-10"></div>
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl -z-10"></div>
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-sky-500/10 rounded-full blur-2xl -z-10"></div>
           </motion.div>
 
           <motion.div
@@ -71,10 +71,24 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
-            className="flex-grow"
+            className="flex-grow w-full"
           >
-            <Card className="glass-card hover:border-primary/30 transition-all duration-500 shadow-2xl hover:shadow-primary/5 h-full">
-              <CardContent className="p-8 space-y-6">
+            <Card className="glass-card hover:border-primary/40 transition-all duration-500 shadow-2xl hover:shadow-primary/5 h-full">
+              <CardContent className="p-6 md:p-8 space-y-6">
+                {/* Mobile Circular Image */}
+                <div className="flex flex-col items-center md:hidden mb-6">
+                  <div className="relative w-32 h-32 rounded-full overflow-hidden border-2 border-primary/30 p-1 bg-background shadow-xl">
+                    <div className="w-full h-full rounded-full overflow-hidden relative">
+                      <Image
+                        src="/abai.png"
+                        alt="Abuzar Khan"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+
                 <p className="text-lg leading-relaxed text-muted-foreground">
                   A Full Stack Engineer with <span className="text-primary font-semibold">four years</span> of industry experience working with multiple companies in developing web, mobile apps, and desktop applications (offline, online, and hybrid).
                 </p>
