@@ -102,13 +102,13 @@ export default function Navbar() {
             className="flex items-center"
           >
             <Link href="#home" className="flex items-center gap-3 group" onClick={(e) => scrollToSection(e, "#home")}>
-              <div className="relative w-10 h-10 bg-gradient-to-br from-primary via-purple-600 to-purple-700 rounded-lg flex items-center justify-center overflow-hidden shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300 border border-primary/20">
+              <div className="relative w-10 h-10 bg-gradient-to-br from-primary via-indigo-600 to-indigo-700 rounded-lg flex items-center justify-center overflow-hidden shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300 border border-primary/20">
                 <span className="text-white font-bold text-xl">A</span>
                 <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-background rounded-full border-2 border-primary shadow-sm"></div>
               </div>
               <div className="font-bold text-xl tracking-tight">
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-600 to-purple-700">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-indigo-600 to-indigo-700">
                   Abuzar
                 </span>
                 <span className="text-primary">.</span>
@@ -139,14 +139,14 @@ export default function Navbar() {
                   <div className={cn(
                     "absolute inset-0 bg-gradient-to-r transition-all duration-300",
                     activeSection === link.href.substring(1)
-                      ? "from-primary/15 via-purple-600/10 to-primary/15"
-                      : "from-primary/0 via-purple-600/0 to-primary/0 group-hover:from-primary/5 group-hover:via-purple-600/5 group-hover:to-primary/5"
+                      ? "from-primary/15 via-indigo-600/10 to-primary/15"
+                      : "from-primary/0 via-indigo-600/0 to-primary/0 group-hover:from-primary/5 group-hover:via-indigo-600/5 group-hover:to-primary/5"
                   )}></div>
                   {activeSection === link.href.substring(1) && (
                     <>
                       <motion.div
                         layoutId="activeTab"
-                        className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-gradient-to-r from-primary to-purple-600 rounded-full shadow-sm"
+                        className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-gradient-to-r from-primary to-indigo-600 rounded-full shadow-sm"
                         transition={{ type: "spring", duration: 0.5 }}
                       />
                       <motion.div
@@ -176,9 +176,9 @@ export default function Navbar() {
             >
               <Button
                 asChild
-                className="bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl border border-primary/20 hover:border-primary/30"
+                className="bg-gradient-to-r from-primary to-indigo-600 hover:from-primary/90 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl border border-primary/20 hover:border-primary/30"
               >
-                <a href="/Abu zar resume s.e.pdf" download="Abuzar_Khan_Resume.pdf">
+                <a href="/ab-cv01.pdf" download="Abuzar_Khan_CV.pdf">
                   <Download className="mr-2 h-4 w-4" /> Resume
                 </a>
               </Button>
@@ -249,9 +249,9 @@ export default function Navbar() {
             >
               <Button
                 asChild
-                className="w-full bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-700 transition-all duration-300 shadow-lg border border-primary/20"
+                className="w-full bg-gradient-to-r from-primary to-indigo-600 hover:from-primary/90 hover:to-indigo-700 transition-all duration-300 shadow-lg border border-primary/20"
               >
-                <a href="/Abu zar resume s.e.pdf" download="Abuzar_Khan_Resume.pdf">
+                <a href="/ab-cv01.pdf" download="Abuzar_Khan_CV.pdf">
                   <Download className="mr-2 h-4 w-4" /> Download Resume
                 </a>
               </Button>
