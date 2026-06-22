@@ -7,29 +7,50 @@ import { CheckCircle, Briefcase } from "lucide-react"
 
 const experiences = [
   {
-    title: "Founder & Full Stack Engineer",
-    company: "ASH Cloud",
-    period: "2024 - Present",
-    location: "Virtual Company",
+    title: "Frontend Developer",
+    company: "CodeBrill",
+    industry: "AI and Legal Tech",
+    period: "May 2025 – Present",
+    location: "Lahore, Pakistan",
     responsibilities: [
-      "Founded and leading ASH Cloud, a virtual company specializing in web development, mobile app development, and AI solutions.",
-      "Managing a talented team and leading technical direction for innovative projects across multiple platforms.",
-      "Developing full-stack applications using React, Next.js, Vue.js, and modern web technologies.",
-      "Implementing AI solutions and building cross-platform mobile applications.",
-      "Overseeing project architecture, deployment, and client relationship management.",
+      "Architect and deliver scalable UI systems using TypeScript, React.js, Vue.js, and Tailwind CSS, reducing component development time by 35% through reusable design patterns adopted across the entire team.",
+      "Drive frontend engineering on an AI-powered Legal Document Management System, enforcing strict TypeScript type safety and performance optimization across a codebase serving enterprise clients.",
+      "Collaborate in Agile sprints with product and backend teams, consistently delivering production-quality features on schedule with zero critical post-release bugs.",
     ],
   },
   {
     title: "Full Stack Developer",
-    company: "Various Companies",
-    period: "2023 - 2024",
-    location: "Multiple Locations",
+    company: "Twenty Four Storage Company",
+    industry: "Storage and Logistics",
+    period: "Oct 2024 – Apr 2025",
+    location: "Mirpur Dadyal",
     responsibilities: [
-      "Worked with multiple companies as a full stack developer, gaining diverse experience across different industries.",
-      "Developed responsive web applications and user interfaces using modern frameworks.",
-      "Collaborated on various projects ranging from e-commerce platforms to AI-powered applications.",
-      "Built and maintained backend systems, databases, and API integrations.",
-      "Contributed to project delivery and system optimization across different teams.",
+      "Engineered end-to-end full-stack applications using TypeScript, React.js, Node.js, and Express.js, improving overall system reliability and reducing downtime by 40% through optimized architecture.",
+      "Designed and implemented a multi-layered RESTful API with JWT authentication, role-based access control, and server-side validation, eliminating critical security vulnerabilities across the platform.",
+      "Established a full unit and integration testing suite that increased code coverage to 80% and cut production regression bugs by 50%.",
+    ],
+  },
+  {
+    title: "MERN Stack Developer",
+    company: "Tech Emulsion",
+    industry: "Software Development Agency",
+    period: "Mar 2024 – Sep 2024",
+    location: "Peshawar, Pakistan",
+    responsibilities: [
+      "Delivered 5+ full-stack MERN applications with TypeScript integration, owning the complete development lifecycle from database schema design to production deployment.",
+      "Designed optimized MongoDB schemas and reusable React component libraries that accelerated feature delivery by 30% across multiple client projects.",
+      "Converted Figma designs into pixel-perfect, fully responsive interfaces across mobile, tablet, and desktop, achieving 100% design accuracy on all delivered projects.",
+    ],
+  },
+  {
+    title: "Frontend Developer Intern",
+    company: "Tech Pioneer",
+    industry: "Software Development",
+    period: "Apr 2023 – Nov 2023",
+    location: "Peshawar, Pakistan",
+    responsibilities: [
+      "Developed reusable React.js component libraries during an 8-month structured internship program, with components integrated directly into the production codebase and praised in senior code reviews.",
+      "Participated in full Agile sprint cycles including planning, standups, and code reviews, gaining end-to-end exposure from UI design through deployment and post-launch iteration.",
     ],
   },
 ]
@@ -111,6 +132,7 @@ export default function Experience() {
                         </Badge>
                         <CardTitle className="text-xl">{exp.title}</CardTitle>
                         <p className="text-lg font-medium text-primary">{exp.company}</p>
+                        <p className="text-sm text-muted-foreground italic">{exp.industry}</p>
                         <span className="text-sm text-muted-foreground">{exp.location}</span>
                       </div>
                     </div>
