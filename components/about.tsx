@@ -44,61 +44,26 @@ export default function About() {
           ></motion.div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start md:items-stretch pt-8 max-w-5xl mx-auto">
+        <div className="max-w-3xl mx-auto pt-8">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="hidden md:relative h-auto w-full md:w-[320px] shrink-0 group md:flex flex-col"
+            className="w-full"
           >
-            <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-sky-400/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <Card className="h-full w-full overflow-hidden border-primary/20 glass-card relative z-10">
-              <Image
-                src="/abai.png"
-                alt="Abuzar Khan Journey"
-                fill
-                className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
-              />
-            </Card>
-            {/* Decorative Elements */}
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-full blur-2xl -z-10"></div>
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-sky-500/10 rounded-full blur-2xl -z-10"></div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="flex-grow w-full"
-          >
-            <Card className="glass-card hover:border-primary/40 transition-all duration-500 shadow-2xl hover:shadow-primary/5 h-full">
-              <CardContent className="p-6 md:p-8 space-y-6">
-                {/* Mobile Circular Image */}
-                <div className="flex flex-col items-center md:hidden mb-6">
-                  <div className="relative w-32 h-32 rounded-full overflow-hidden border-2 border-primary/30 p-1 bg-background shadow-xl">
-                    <div className="w-full h-full rounded-full overflow-hidden relative">
-                      <Image
-                        src="/abai.png"
-                        alt="Abuzar Khan"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-
+            <Card className="glass-card hover:border-primary/40 transition-all duration-500 shadow-2xl hover:shadow-primary/5">
+              <CardContent className="p-6 md:p-10 space-y-6">
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  A Full Stack Engineer with <span className="text-primary font-semibold">four years</span> of industry experience working with multiple companies in developing web, mobile apps, and desktop applications (offline, online, and hybrid).
+                  Results-driven <span className="text-primary font-semibold">Full Stack Developer</span> with 3+ years of experience delivering scalable, production-ready web and desktop applications across healthcare, storage, and enterprise sectors.
                 </p>
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  Currently running my own virtual company called <span className="text-primary font-semibold">ASH Cloud</span> with a talented team, specializing in web development, mobile app development, and AI solutions. I lead the technical direction and development of innovative projects across multiple platforms.
+                  Specialized in <span className="text-primary font-semibold">TypeScript, React.js, Node.js</span>, and RESTful API development with a proven track record of improving application performance, reducing security vulnerabilities, and shipping high-quality features in fast-paced Agile environments. Immediately available and open to relocation.
                 </p>
                 <div className="flex flex-wrap gap-2 pt-4">
-                  {["React.js", "Next.js", "Vue.js", "JavaScript", "TypeScript"].map((skill) => (
-                    <span 
-                      key={skill} 
+                  {["TypeScript", "React.js", "Next.js", "Vue.js", "Node.js", "Express.js", "React Native", "Electron.js", "MongoDB", "PostgreSQL"].map((skill) => (
+                    <span
+                      key={skill}
                       className="px-4 py-1.5 bg-primary/5 border border-primary/10 text-primary rounded-lg text-sm font-medium hover:bg-primary/10 transition-colors"
                     >
                       {skill}

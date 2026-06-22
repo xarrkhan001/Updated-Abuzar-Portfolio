@@ -75,12 +75,12 @@ const projects = [
     liveLink: "https://dukaan-henna.vercel.app/",
   },
   {
-    title: "Voice Chat App",
+    title: "KCD Notify",
     description:
-      "A real-time voice chat application that enables users to communicate through voice messages. Features include user authentication, real-time messaging, and voice recording capabilities.",
-    tags: ["Real-time", "React", "Firebase", "Voice API"],
+      "Administration web app that digitized result distribution for Khyber College of Dentistry, replacing manual processes and reducing notification delivery time from days to seconds. Features automated Email and WhatsApp broadcast with a secure RBAC admin dashboard.",
+    tags: ["MERN Stack", "Node.js", "Email API", "WhatsApp API", "React.js"],
     image: "/images/projects6.webp",
-    liveLink: "https://voice-chat-chatapp.vercel.app/",
+    liveLink: "https://kcd-notify-5jq3.vercel.app/login",
   },
 ]
 

@@ -33,7 +33,7 @@ export default function Hero() {
                 transition={{ delay: 0.3, duration: 0.5 }}
                 className="inline-block px-3 py-1 text-sm font-medium bg-primary/10 text-primary rounded-full shadow-sm"
               >
-                Software Engineer
+                Software Engineer | Full Stack Developer
               </motion.span>
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
@@ -49,7 +49,7 @@ export default function Hero() {
                 transition={{ delay: 0.5, duration: 0.5 }}
                 className="text-2xl md:text-3xl text-muted-foreground"
               >
-                Full Stack Engineer | DevOps
+                Full Stack Developer
               </motion.h2>
             </motion.div>
 
@@ -59,7 +59,7 @@ export default function Hero() {
               transition={{ delay: 0.6, duration: 0.5 }}
               className="text-lg text-muted-foreground max-w-md"
             >
-              Full Stack Engineer with 4 years of industry experience in web, mobile apps, and desktop applications (offline, online, and hybrid), alongside DevOps. Expert in responsive apps, cross-platform solutions, clean code, and CI/CD pipelines.
+              Results-driven Full Stack Developer with 3+ years of experience delivering scalable, production-ready web and desktop applications across healthcare, storage, and enterprise sectors.
             </motion.p>
 
             <motion.div
@@ -166,7 +166,7 @@ export default function Hero() {
                 initial={{ y: 0 }}
                 animate={{ y: [0, -10, 0] }}
                 transition={{ repeat: Number.POSITIVE_INFINITY, duration: 3, ease: "easeInOut" }}
-                className="relative w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden shadow-2xl p-1"
+                className="relative w-72 h-72 md:w-88 md:h-88 lg:w-[24rem] lg:h-[24rem] rounded-full overflow-hidden shadow-2xl p-1"
                 style={{
                   marginTop: "8px",
                   backgroundImage: 'linear-gradient(45deg, #6366f1, #0ea5e9, #4f46e5, #6366f1)',
@@ -177,11 +177,11 @@ export default function Hero() {
               >
                 <div className="w-full h-full rounded-full overflow-hidden bg-background">
                   <Image
-                    src="/abai-cartoon.png"
+                    src="/abuzar-suit.jpg"
                     alt="Abuzar Khan Avatar"
                     fill
                     className="object-cover"
-                    style={{ objectPosition: 'center 70%' }}
+                    style={{ objectPosition: 'center 10%', transform: 'scale(1.1)' }}
                     priority
                   />
                 </div>
